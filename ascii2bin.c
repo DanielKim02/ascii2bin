@@ -1,4 +1,4 @@
-
+/*
 #include "stdio.h"
 #include "stdlib.h"
 #include <unistd.h>
@@ -32,3 +32,27 @@ int main () {
     printf("%u\n", number);
     return 0;
 }
+*/
+
+
+
+//THIS IS NOT MY WORK, THIS IS A PEERS WORK, WHO I AM NOT TAKING ANY CREDIT FOR AND
+// I AM  TEMPORARILY PUSHING IT TO THE SANDBOX SERVER TO COMPARE OUR TWO PROGRAMS
+//
+int main()
+{
+    int offset = 48;  
+    int number = 0;
+    char ascii_value;
+    int retval = read(0, &ascii_value, 1);
+    while ((retval == 1) && (ascii_value != '\n')) {
+        int digit = ascii_value - offset;
+        if ((digit == 1) || (digit == 0))
+            number = (number << 1) + digit;
+        retval = read(0, &ascii_value, 1);
+    }
+    printf("%u\n", number);
+    return 0;
+}
+
+
