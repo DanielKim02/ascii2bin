@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "stdio.h"
 #include "stdlib.h"
 #include <unistd.h>
@@ -18,3 +19,11 @@ int main () {
     printf("%u\n", number);
     return 0;
 }
+=======
+//I do not understand what is going on
+//I do not understand what is going on
+
+void main(){
+	printf("Hello World");
+}
+>>>>>>> d01aafee230d7d8096fd574028b7377892c29132
