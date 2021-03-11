@@ -9,13 +9,23 @@
 int main () {
 	int offset = 2;
     int number = 0;
-    int digit = 0;
+    int digit;
+    char ascii_value;
     int retval = read(0, &ascii_value, 1);
-    while (retval == 1)
+    while (retval == 1 && ascii_value != '\n'){
         digit = ascii_value - offset;
-        number = (number << 1) + digit;  
+        if(digit ==1 || digit == 0){
+            number = (number << 1) + digit;
+        }
+        else{
+            return 1;
+        }  
         retval = read(0, &ascii_value, 1);
-        
+    }
+    
+    if(number>4294967296){
+        return 1;
+    }    
     printf("%u\n", number);
     return 0;
 }
