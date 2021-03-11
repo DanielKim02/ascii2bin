@@ -39,6 +39,12 @@ int main () {
 //THIS IS NOT MY WORK, THIS IS A PEERS WORK, WHO I AM NOT TAKING ANY CREDIT FOR AND
 // I AM  TEMPORARILY PUSHING IT TO THE SANDBOX SERVER TO COMPARE OUR TWO PROGRAMS
 //
+#include "stdio.h"
+#include "stdlib.h"
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <unistd.h>
 int main()
 {
     int offset = 48;  
