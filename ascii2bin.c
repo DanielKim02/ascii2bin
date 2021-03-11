@@ -15,9 +15,9 @@ int main () {
     scanf("%c",&ascii_value);
     //////////
     int retval = read(0, &ascii_value, 1);
-    while (retval == 1 && ascii_value != '\n'){
+    while ((retval == 1) && (ascii_value != '\n')){
         digit = ascii_value - offset;
-        if(digit ==1 || digit == 0){
+        if((digit ==1) || (digit == 0){
             number = (number << 1) + digit;
         }
         else{
