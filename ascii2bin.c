@@ -7,7 +7,7 @@
 #include <unistd.h>
 
 int main () {
-	int offset = 2;
+	int offset = 48;
     int number = 0;
     int digit;
     char ascii_value;
